@@ -1,0 +1,5 @@
+D:/LabWorksIT/LB1/out/build/GCC 15.2.0 x86_64-w64-mingw32 (mingw64)/CMakeFiles/Task_1.dir
+D:/LabWorksIT/LB1/out/build/GCC 15.2.0 x86_64-w64-mingw32 (mingw64)/CMakeFiles/Task_2.dir
+D:/LabWorksIT/LB1/out/build/GCC 15.2.0 x86_64-w64-mingw32 (mingw64)/CMakeFiles/Task_3.dir
+D:/LabWorksIT/LB1/out/build/GCC 15.2.0 x86_64-w64-mingw32 (mingw64)/CMakeFiles/ALL_BUILD.dir
+D:/LabWorksIT/LB1/out/build/GCC 15.2.0 x86_64-w64-mingw32 (mingw64)/CMakeFiles/ZERO_CHECK.dir

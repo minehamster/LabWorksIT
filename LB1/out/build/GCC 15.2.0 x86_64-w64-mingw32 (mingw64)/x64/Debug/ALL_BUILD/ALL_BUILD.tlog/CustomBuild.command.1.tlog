@@ -1,0 +1,10 @@
+^D:\LABWORKSIT\LB1\CMAKELISTS.TXT
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/LabWorksIT/LB1 "-BD:/LabWorksIT/LB1/out/build/GCC 15.2.0 x86_64-w64-mingw32 (mingw64)" --check-stamp-file "D:/LabWorksIT/LB1/out/build/GCC 15.2.0 x86_64-w64-mingw32 (mingw64)/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
