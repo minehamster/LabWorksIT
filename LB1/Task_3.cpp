@@ -85,19 +85,19 @@ void shoot(char user_field[][SIZE], char true_field[][SIZE], int x, int y){
             std::cin >> x >> y;
         }
         if (true_field[x][y] == SHIP){
-            system("cls");
             std::cout << "HIT!" << std::endl << "Press Enter to continue";
             std::cin.get();
             std::cin.get();
+            system("cls");
             user_field[x][y] = HIT;
             true_field[x][y] = HIT;
             succ_shot = true;
         }
         if (true_field[x][y] == EMPTY){
-            system("cls");
             std::cout << "MISS!" << std::endl << "Press Enter to continue";
             std::cin.get();
             std::cin.get();
+            system("cls");
             user_field[x][y] = MISS;
             succ_shot = true;
         }
@@ -140,7 +140,7 @@ int main(){
         int x, y;
         bool horiz;
         printField(true1_field);
-        std::cout << "\nEnter the coordinates (first row, second column) of the ship with lenght " << len_ships[i] << ", as well as whether it is horizontal (true/false): ";
+        std::cout << "\nEnter the coordinates (first row, second column) of the ship with lenght " << len_ships[i] << ", as well as whether it is horizontal (1/0): ";
         std::cin >> x >> y >> horiz;
         placeShip(true1_field, len_ships[i], x, y, horiz);
     }
@@ -152,7 +152,7 @@ int main(){
         int x, y;
         bool horiz;
         printField(true2_field);
-        std::cout << "\nEnter the coordinates (first row, second column) of the ship with lenght " << len_ships[i] << ", as well as whether it is horizontal (true/false): ";
+        std::cout << "\nEnter the coordinates (first row, second column) of the ship with lenght " << len_ships[i] << ", as well as whether it is horizontal (1/0): ";
         std::cin >> x >> y >> horiz;
         placeShip(true2_field, len_ships[i], x, y, horiz);
         std::cout << std::endl << "Press Enter to continue";
