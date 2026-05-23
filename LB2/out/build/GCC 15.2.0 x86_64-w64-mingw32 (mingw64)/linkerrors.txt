@@ -1,0 +1,8 @@
+================================================================================
+Linker Errors
+Generated: 2026-05-20T08:17:11.117Z
+Total Errors: 1
+================================================================================
+
+[LNK1168] (MSVC)
+не удается открыть D:\LabWorksIT\LB2\out\build\GCC 15.2.0 x86_64-w64-mingw32 (mingw64)\Debug\Task5.exe для записи [D:\LabWorksIT\LB2\out\build\GCC 15.2.0 x86_64-w64-mingw32 (mingw64)\Task5.vcxproj]

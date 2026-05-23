@@ -178,6 +178,22 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <Project>{D75CE427-039A-3623-87BF-A929B0BD18B9}</Project>
       <Name>Task1</Name>
     </ProjectReference>
+    <ProjectReference Include="D:\LabWorksIT\LB2\out\build\GCC 15.2.0 x86_64-w64-mingw32 (mingw64)\Task2.vcxproj">
+      <Project>{1915E2CB-1EE3-3C73-A2C8-E34A8F1102A3}</Project>
+      <Name>Task2</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\LabWorksIT\LB2\out\build\GCC 15.2.0 x86_64-w64-mingw32 (mingw64)\Task3.vcxproj">
+      <Project>{48E7B825-0B20-3859-8438-D15D553C4526}</Project>
+      <Name>Task3</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\LabWorksIT\LB2\out\build\GCC 15.2.0 x86_64-w64-mingw32 (mingw64)\Task4.vcxproj">
+      <Project>{18E695BC-AC5E-380B-B050-D3D2DC33129B}</Project>
+      <Name>Task4</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\LabWorksIT\LB2\out\build\GCC 15.2.0 x86_64-w64-mingw32 (mingw64)\Task5.vcxproj">
+      <Project>{E95E4DD5-B3F6-38DB-9769-F5A63623A199}</Project>
+      <Name>Task5</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

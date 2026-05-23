@@ -1,21 +1,20 @@
 #include <iostream>
 
 int main(){
-    int n, sum = 0, max = -1, sr;
+    int n, max = -1;
+    float sum = 0;
     std::cout << "Enter size of array: ";
     std::cin >> n;
     if (n <= 0){
         std::cout << "Invalid number";
         return -1;
     }
+    std::cout << "Array elements: ";
     int *array = new int[n];
     for (int i = 0; i < n; i++){
         array[i] = i*i;
-        if (i==0){
-            std::cout << "Array elements: ";
-        }
         std::cout << array[i] << " ";
-        sum += i*i;
+        sum += array[i];
     }
 
     for (int i = 0; i < n; i++){
@@ -23,7 +22,7 @@ int main(){
             max = array[i];
         }
     }
-    sr = sum / n;
+    float sr = sum / n;
 
     std::cout << std::endl << "Sum of array elements: " << sum << std::endl;
     std::cout << "Arithmetic mean of array elements: " << sr << std::endl;
