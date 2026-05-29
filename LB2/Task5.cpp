@@ -101,14 +101,14 @@ int main() {
     const int SIZE = 5;
     Vehicle garage[SIZE];
 
-    //inputVehicles(garage, SIZE);
+    inputVehicles(garage, SIZE);
     
     
-    garage[0] = {Car, "Toyota Camry", {249, 3.5}};
-    garage[1] = {Truck, "Volvo FH", {500, 12.8}};
-    garage[2] = {Motorcycle, "Yamaha R1", {200, 1.0}};
-    garage[3] = {Car, "Lada Granta", {90, 1.6}};
-    garage[4] = {Car, "BMW M5", {600, 4.4}};
+    // garage[0] = {Car, "Toyota Camry", {249, 3.5}};
+    // garage[1] = {Truck, "Volvo FH", {500, 12.8}};
+    // garage[2] = {Motorcycle, "Yamaha R1", {200, 1.0}};
+    // garage[3] = {Car, "Lada Granta", {90, 1.6}};
+    // garage[4] = {Car, "BMW M5", {600, 4.4}};
     
 
     std::cout << "\nSorting by power\n";
