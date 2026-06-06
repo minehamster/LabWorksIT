@@ -14,14 +14,14 @@ struct Student
     double gpa;
 };
 
-void printStudent(Student student)
+void printStudent(const Student& student)
 {
     std::cout << "Name: " << student.name
               << ", ID: " << student.id
               << ", GPA: " << student.gpa << std::endl;
 }
 
-void printFirstFiveArray(std::array<Student, 1000> students)
+void printFirstFiveArray(const std::array<Student, 1000>& students)
 {
     for (int i = 0; i < 5; i++)
     {
@@ -29,7 +29,7 @@ void printFirstFiveArray(std::array<Student, 1000> students)
     }
 }
 
-void printFirstFiveVector(std::vector<Student> students)
+void printFirstFiveVector(const std::vector<Student>& students)
 {
     for (int i = 0; i < 5; i++)
     {
@@ -37,9 +37,9 @@ void printFirstFiveVector(std::vector<Student> students)
     }
 }
 
-void printFirstFiveList(std::list<Student> students)
+void printFirstFiveList(const std::list<Student>& students)
 {
-    std::list<Student>::iterator it = students.begin();
+    auto it = students.begin();
 
     for (int i = 0; i < 5; i++)
     {
@@ -71,23 +71,19 @@ int main()
 
     std::cout << "Sort by GPA descending" << std::endl;
 
-    std::sort(arrayStudents.begin(), arrayStudents.end(),
-        [](Student first, Student second)
+    auto sortByGPA = [](const Student& first, const Student& second)
         {
             return first.gpa > second.gpa;
-        });
+        };
+
+    std::sort(arrayStudents.begin(), arrayStudents.end(),
+        sortByGPA);
 
     std::sort(vectorStudents.begin(), vectorStudents.end(),
-        [](Student first, Student second)
-        {
-            return first.gpa > second.gpa;
-        });
+        sortByGPA);
 
     listStudents.sort(
-        [](Student first, Student second)
-        {
-            return first.gpa > second.gpa;
-        });
+        sortByGPA);
 
     std::cout << "Array first 5 students:" << std::endl;
     printFirstFiveArray(arrayStudents);

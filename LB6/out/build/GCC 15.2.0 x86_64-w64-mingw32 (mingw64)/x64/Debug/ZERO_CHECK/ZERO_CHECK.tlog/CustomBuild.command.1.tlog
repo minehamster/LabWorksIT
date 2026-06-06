@@ -1,0 +1,10 @@
+^D:\LABWORKSIT\LB6\OUT\BUILD\GCC 15.2.0 X86_64-W64-MINGW32 (MINGW64)\CMAKEFILES\ED3F5AFDCA6BDBEE10CF0283A6F8D14B\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/LabWorksIT/LB6 "-BD:/LabWorksIT/LB6/out/build/GCC 15.2.0 x86_64-w64-mingw32 (mingw64)" --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file "D:/LabWorksIT/LB6/out/build/GCC 15.2.0 x86_64-w64-mingw32 (mingw64)/LB6.sln"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
